@@ -26,10 +26,6 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
-  
-] as const;
-
 export const projectsData = [
   
 ] as const;
