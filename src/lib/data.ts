@@ -13,23 +13,11 @@ export const links = [
     hash: "#projects",
   },
   {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
     name: "Contact",
     hash: "#contact",
   },
 ] as const;
 
-export const projectsData = [
-  
-] as const;
+export const projectsData = [] as const;
 
-export const skillsData = [
-  
-] as const;
+
