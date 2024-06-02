@@ -2,10 +2,21 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { links } from "@/lib/data";
 import Link from "next/link";
 
-export default function Header() {
+
+export type HeaderRoute = {
+  name : string;
+  href : string;
+}
+
+export type HeaderRoutes = HeaderRoute[];
+
+export interface HeaderProps {
+  routes : HeaderRoutes;
+}
+
+export default function Header(props : HeaderProps) {
   return (
     <header className="sticky top-0 z-50 py-5 sm:mt-3 md:px-20">
       <div className="flex justify-end">
@@ -16,12 +27,12 @@ export default function Header() {
         >
           <nav className="flex relative justify-center items-center sm:h-[initial] sm:py-0">
             <ul className="flex relative flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
-              {links.map((link) => (
+              {props.routes.map((link, index) => (
                 <li
                   className="px-2 justify-center items-center"
-                  key={link.hash}
+                  key={index}
                 >
-                  <Link href={link.hash}>
+                  <Link href={link.href}>
                     <div className="flex items-center justify-center hover:text-gray-950 transition">
                       {link.name}
                     </div>

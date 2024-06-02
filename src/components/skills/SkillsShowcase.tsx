@@ -28,9 +28,9 @@ export interface SkillsShowcaseProps {
 
 export default function SkillsShowcase({ skills }: SkillsShowcaseProps) {
   return (
-    <section className="px-6 py-32 sm:px-14 md:px-20">
-      <div className="relative">
-        <SectionHeading>My skills</SectionHeading>
+    <section className="px-6 py-28 sm:px-14 md:px-20">
+      <SectionHeading>My skills</SectionHeading>
+      <div className="relative py-6">
         <div>
           {skills.map((section) => (
             <AnimatePresence key={section.sectionName}>

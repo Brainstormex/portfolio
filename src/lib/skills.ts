@@ -57,6 +57,10 @@ export const skillsData: SkillsShowcaseProps["skills"] = [
         icon: ReactjsSvg,
       },
       {
+        name: "React Router Dom",
+        icon: ReactRouterDomIcon,
+      },
+      {
         name: "Nextjs",
         icon: SiNextdotjs,
       },
