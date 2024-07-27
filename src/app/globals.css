@@ -7,3 +7,7 @@
         @apply min-h-screen;
       }
 }
+
+html {
+  --line-color: #e5e7eb;
+}

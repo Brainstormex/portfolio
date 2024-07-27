@@ -28,7 +28,7 @@ const ImageCarousel = ({ images, alt }: ImageCarouselProps) => {
   });
 
   return (
-    <div className="relative" {...handlers}>
+    <div className="relative overflow-hidden" {...handlers}>
       <img src={images[imageIndex]} alt={alt}/>
       {images.length > 1 && (
         <>

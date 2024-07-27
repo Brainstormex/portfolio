@@ -39,7 +39,6 @@ export default function SkillsShowcase({ skills }: SkillsShowcaseProps) {
                 <ul className="mt-2 flex flex-wrap gap-4 text-xl">
                   {section.skills.map((pill, index) => (
                     <motion.div
-                      className="bg-white border border-black/[0.1] rounded-xl"
                       key={index}
                       variants={fadeInAnimationVariants}
                       initial="initial"

@@ -27,7 +27,7 @@ export default function CardList({ cardData }: CardListProps) {
           ))}
         </div>
         <button
-            className="mt-4 p-2 bg-blue-500 text-white rounded"
+            className="mt-4 p-2 bg-[#3cacd7] hover:bg-[#1b81ae] text-white rounded-lg"
             onClick={handleViewAllProjects}
           >
             View All Projects

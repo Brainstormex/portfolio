@@ -8,11 +8,11 @@ import Image from "next/image";
 export default function Intro() {
   return (
     <section className="h-[calc(100vh-100px)] flex justify-center">
-      <ParticlesContainer />
-      <div className="flex flex-col-reverse justify-between md:flex-row relative items-center w-full sm:justify-around md:justify-between px-6 sm:px-14 md:px-20 z-10">
-        <div className="w-full pb-20 md:pb-0 mt-10 md:w-1/2 lg:w-1/2">
-          <h1 className="text-[35px] md:text-[50px] text-white font-bold">
-            Hi, I'am <span className="text-yellow-400">Uzer Sayed</span>
+      <div className="flex flex-col-reverse justify-between lg:flex-row relative items-center w-full sm:justify-around lg:justify-between px-6 sm:px-14 md:px-20 z-10 mx-auto lg:max-w-7xl">
+        <div className="w-full pb-20 md:pb-0 mt-10 lg:w-1/2">
+          <h1 className="text-[35px] md:text-[50px] font-bold">
+            <span className="text-[#1b81ae]">Hi</span>
+            , I'm <span className="text-[#1b81ae]">Uzer Sayed</span>
           </h1>
           <div className="text-[2rem] md:text-[3rem]">
             Frontend Developer
@@ -22,14 +22,14 @@ export default function Intro() {
           </p>
         </div>
 
-        <div className="max-w-[450px] sm:w-1/2 md:w-2/3 lg:w-full">
+        <div className="w-full md:w-2/3 lg:w-1/2 flex justify-center">
           <Image
-            src="/introIcon.svg"
+            src="/homePageImage.png"
             alt="intro icon"
             height={450}
             width={450}
             priority={true}
-            className="w-full float-end lg:max-w-[450px] md:max-w-[350px]"
+            className="w-full h-auto max-w-[450px]"
           />
         </div>
       </div>
