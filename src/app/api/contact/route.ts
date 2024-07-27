@@ -50,9 +50,3 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ status: 500, message: 'Internal Server Error' }, { status: 500 });
   }
 }
-
-export async function handler(req: NextRequest) {
-  if (req.method !== 'POST') {
-    return NextResponse.json({ status: 405, message: 'Method Not Allowed' }, { status: 405 });
-  }
-}
