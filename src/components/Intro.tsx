@@ -12,7 +12,7 @@ export default function Intro() {
         <div className="w-full pb-20 md:pb-0 mt-10 lg:w-1/2">
           <h1 className="text-[35px] md:text-[50px] font-bold">
             <span className="text-[#1b81ae]">Hi</span>
-            , I'm <span className="text-[#1b81ae]">Uzer Sayed</span>
+            , I&apos;m <span className="text-[#1b81ae]">Uzer Sayed</span>
           </h1>
           <div className="text-[2rem] md:text-[3rem]">
             Frontend Developer

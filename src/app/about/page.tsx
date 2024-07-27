@@ -30,7 +30,7 @@ export default function page() {
         </motion.div>
         <div className="flex flex-col w-full mt-10 lg:w-1/2">
           <h1 className="text-[35px] md:text-[50px] font-bold">
-            It's me <span className="text-[#1b81ae]">Uzer Sayed</span>,
+            It&apos;s me <span className="text-[#1b81ae]">Uzer Sayed</span>,
           </h1>
           <p className="text-base font-medium sm:text-lg">
             a passionate and dedicated developer specializing in front-end
